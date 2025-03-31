@@ -1,4 +1,4 @@
-FROM node:18
+FROM debian:8.7
 
 RUN mkdir /usr/src/goof
 RUN mkdir /tmp/extracted_files
