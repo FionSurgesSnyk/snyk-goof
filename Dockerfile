@@ -5,8 +5,7 @@ RUN mkdir /tmp/extracted_files
 COPY . /usr/src/goof
 WORKDIR /usr/src/goof
 
-RUN npm install
-RUN npm update
+RUN npm ci
 EXPOSE 3001
 EXPOSE 9229
-ENTRYPOINT ["npm", "start"]
+CMD ["npm", "start"]
