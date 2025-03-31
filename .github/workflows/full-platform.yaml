@@ -40,8 +40,8 @@ jobs:
 
       - name: Snyk Container
         run: |
-          docker build . -t yourimage:tag
-          snyk container monitor yourimage:tag --file=Dockerfile
+          docker build . -t snykgoof:latest
+          snyk container monitor snykgoof:latest --file=Dockerfile
 
       - name: Snyk IaC
         run: |
