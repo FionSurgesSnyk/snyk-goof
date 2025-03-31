@@ -1,4 +1,4 @@
-FROM debian:8.7
+FROM node:6-stretch
 
 RUN mkdir /usr/src/goof
 RUN mkdir /tmp/extracted_files
@@ -8,4 +8,4 @@ WORKDIR /usr/src/goof
 RUN npm install
 EXPOSE 3001
 EXPOSE 9229
-# ENTRYPOINT ["npm", "start"]
+ENTRYPOINT ["npm", "start"]

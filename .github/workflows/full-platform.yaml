@@ -46,5 +46,3 @@ jobs:
       - name: Snyk IaC
         run: |
           snyk iac test || true
-
-# Trigger new pipeline scan
